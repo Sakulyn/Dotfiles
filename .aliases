@@ -1,0 +1,6 @@
+alias rm="rm -i"
+alias v="vim"
+alias mkdir="mkdir -p"
+alias df="df -h"
+alias c="clear"
+alias gl="git --no-pager log"
