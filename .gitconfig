@@ -1,29 +1,28 @@
 [user]
-    name = Sakulyn
-    email = 87746650+Sakulyn@users.noreply.github.com
+	name = Sakulyn
+	email = 87746650+Sakulyn@users.noreply.github.com
 [http]
-    postBUffer = 5242880000
-    lowSpeedLimit = 10
-    lowSpeedTime = 9999
-    version = HTTP/1.1
+	postBuffer = 5242880000
+	lowSpeedLimit = 10
+	lowSpeedTime = 9999
+	version = HTTP/1.1
 [core]
-    compression = 0
-    excludesfile = ~/.gitignore_global
-    quotepath = false
+	compression = 0
+	excludesfile = ~/.gitignore_global
+	quotepath = false
 [alias]
-    st = status -sb
-    co = checkout
-    cm = commit -m
-    lg = lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' 
-    graph = log --all --graph --decorate --oneline
+	st = status -sb
+	co = checkout
+	cm = commit -m
+	lg = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' 
+	graph = log --all --graph --decorate --oneline
 [credential]
-    helper = cache --timeout=360000
+    	# helper = cache --timeout=360000 # windows
+	helper = osxkeychain # mac
 [filter "lfs"]
-    smudge = git-lfs smudge -- %f
-    process = git-lfs filter-process
-    required = true
-    clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
 [init]
-    defaultBranch = main
-[push]
-    default = simple
+	defaultBranch = main

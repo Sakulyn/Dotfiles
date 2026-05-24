@@ -1,6 +1,20 @@
-alias rm="rm -i"
+# Shortcuts
 alias v="vim"
-alias mkdir="mkdir -p"
-alias df="df -h"
 alias c="clear"
+alias mkdir="mkdir -p"
 alias gl="git --no-pager log"
+alias jl="conda activate jupyter && jupyter lab"
+
+alias rm="rm -i"
+
+# Easier navigation: .., ...
+alias ..="cd .."
+alias ...="cd ../.."
+
+# IP addresses
+alias localip="ipconfig getifaddr en0"
+
+# Proxy Configuration
+alias proxy='export http_proxy=http://127.0.0.1:1080; export https_proxy=$http_proxy'
+alias proxy-off='unset http_proxy; unset https_proxy'
+
